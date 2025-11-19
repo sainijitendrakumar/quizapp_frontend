@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import useQuestions from "./useQuestions";
+import { useNavigate } from "react-router-dom";
 
 export default function Other() {
+  const navigate = useNavigate();
   const { questions, loading, error } = useQuestions();
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState([]); // 🆕 store user answers per question
@@ -11,6 +13,10 @@ export default function Other() {
 
   // Timer logic
   useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/"); // ❌ अगर token नहीं है → Login page पर भेज दो
+    }
     if (finished) return;
     if (timeLeft <= 0) {
       handleFinish();
