@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   Calculator,
   FlaskConical,
@@ -55,10 +55,11 @@ const subjects = [
 ];
 
 export default function Subjects() {
+  const { subject } = useParams();
   const navigate = useNavigate();
   const handleClick = (subject) => {
     alert(`Opening ${subject.title}`);
-    navigate("/quiz");
+    navigate("/quiz/" + `${subject.title}`);
   };
 
   return (
