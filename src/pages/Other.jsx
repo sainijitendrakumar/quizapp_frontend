@@ -5,7 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 export default function Other() {
   const navigate = useNavigate();
   const { subject } = useParams();
-  const { questions, loading, error } = useQuestions({ subject });
+  const { questions, loading, error } = useQuestions(subject);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState([]); // 🆕 store user answers per question
   const [score, setScore] = useState(0);

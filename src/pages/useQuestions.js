@@ -9,7 +9,7 @@ const useQuestions = (subject) => {
   const [error, setError] = useState(null);
 
   console.log(import.meta.env.VITE_API_URL);
-  console.log({subject});
+  console.log(subject);
   
 
   useEffect(() => {
