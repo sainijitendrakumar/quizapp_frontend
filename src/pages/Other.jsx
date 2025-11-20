@@ -15,7 +15,7 @@ export default function Other() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
-      navigate("/"); // ❌ अगर token नहीं है → Login page पर भेज दो
+      navigate("/login"); // ❌ अगर token नहीं है → Login page पर भेज दो
     }
     if (finished) return;
     if (timeLeft <= 0) {
