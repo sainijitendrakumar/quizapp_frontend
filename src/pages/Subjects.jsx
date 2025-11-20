@@ -5,6 +5,7 @@ import {
   BookOpen,
   Globe,
   Laptop,
+  Brain,
 } from "lucide-react";
 
 const subjects = [
