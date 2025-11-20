@@ -43,6 +43,13 @@ const subjects = [
     icon: <Laptop size={40} />,
     color: "bg-red-100 text-red-600",
   },
+  {
+    id: 6,
+    title: "Reasoning",
+    description: "Logic, puzzles, series, coding-decoding & more.",
+    icon: <Brain size={40} />,
+    color: "bg-orange-100 text-orange-600",
+  },
 ];
 
 export default function Subjects() {
