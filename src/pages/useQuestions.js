@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useQuestions = (apiUrl = "https://quizapp-production-c985.up.railway.app/api/questions") => {
+const useQuestions = (apiUrl = import.meta.env.VITE_API_URL+"/api/questions") => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
