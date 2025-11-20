@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import useQuestions from "./useQuestions";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function Other() {
   const navigate = useNavigate();

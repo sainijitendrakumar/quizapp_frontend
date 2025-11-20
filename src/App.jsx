@@ -1,16 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useParams,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Quiz from "./pages/Quizpage"; // (your quiz page)
 import ResultPage from "./pages/Resultpage";
 import Other from "./pages/Other";
 import Subjects from "./pages/Subjects";
-import subject from "./pages/Subjects";
+
 function App() {
   return (
     <Router>
