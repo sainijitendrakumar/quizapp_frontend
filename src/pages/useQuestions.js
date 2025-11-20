@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useQuestions = (apiUrl = import.meta.env.VITE_API_URL+"/api/questions") => {
+
+const useQuestions = (subject) => {
+  const apiUrl = `${import.meta.env.VITE_API_URL}/api/questions/${subject}`;
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
