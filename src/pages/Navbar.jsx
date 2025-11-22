@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md px-6 py-4 flex items-center justify-between">
+    <nav className="bg-white shadow-md w-full px-6 py-4 flex items-center justify-between">
       {/* Logo */}
       <h1 className="text-xl font-bold text-blue-600">Quiz App</h1>
 
