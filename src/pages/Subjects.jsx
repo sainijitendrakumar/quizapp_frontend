@@ -57,7 +57,7 @@ const subjects = [
 export default function Subjects() {
   const navigate = useNavigate();
   const handleClick = (subject) => {
-    alert(`Opening ${subject.title}`);
+    // alert(`Opening ${subject.title}`);
     navigate("/quiz/" + `${subject.title.toLowerCase()}`);
   };
 

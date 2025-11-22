@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import useQuestions from "./useQuestions";
 import { useNavigate, useParams } from "react-router-dom";
+import Navbar from "./Navbar";
 
 export default function Other() {
   const navigate = useNavigate();
@@ -87,6 +88,7 @@ export default function Other() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-4">
+      <Navbar />
       <div className="max-w-md w-full bg-white rounded-lg shadow p-6">
         <div className="flex justify-between mb-3">
           <h2 className="font-semibold">
